@@ -1,0 +1,60 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Make payment
+{% endblock %}
+
+{% block main %}
+
+<div class="govuk-width-container">
+  <main role="main" class="govuk-main-wrapper">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+
+        <a href="/payment-screens-mvp/service-payment-summary-mvp" class="govuk-back-link">Back</a>
+        <br>
+        <br>
+
+          <h1 class="govuk-heading-xl">
+            Make payment
+            <span class="govuk-caption-xl"></span>
+          </h1>{{releaseVersion | log }}
+          <!-- <p>
+            Amount to pay: £550
+          </p> -->
+
+              <div class="govuk-inset-text">
+                Amount to pay:<p class="govuk-body govuk-!-font-weight-bold">£216.50</p>
+              </div>
+
+              <div class="govuk-form-group">
+                <label class="govuk-label" for="contact-by-email">Enter your PBA number</label>
+                  <span id="nationality-hint" class="govuk-hint">Example: PBA0896366</span>
+                <input class="govuk-input govuk-!-width-two-thirds" id="contact-by-email" name="contact-by-email" type="text">
+              </div>
+
+              <div class="govuk-form-group">
+                <label class="govuk-label" for="contact-by-email">Enter reference</label>
+                  <span id="nationality-hint" class="govuk-hint">A unique reference to track the payment</span>
+                  <span id="nationality-hint" class="govuk-hint">This will appear on your statement</span>
+                <input class="govuk-input govuk-!-width-two-thirds" id="contact-by-email" name="contact-by-email" type="text">
+              </div>
+
+
+
+                  <a href="/payment-screens-mvp/service-payment-screen-error-mvp" class="govuk-button">
+                   Pay and continue
+                  </a>
+
+
+
+
+
+
+
+      </div>
+    </div>
+  </main>
+</div>
+
+{% endblock %}

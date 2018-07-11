@@ -1,0 +1,196 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  In service payment screens prototype
+{% endblock %}
+
+{% block content %}
+
+  <main class="govuk-main-wrapper">
+    <div class="govuk-grid-row">
+
+      <div class="govuk-grid-column-two-thirds">
+        <h1 class="govuk-heading-xl">
+          In service payment screens prototype
+          <span class="govuk-caption-xl">Version 1</span>
+        </h1>{{releaseVersion | log }}
+
+            <h2 class="govuk-heading-m">In service MVP payment screens</h2>
+
+            <a href="/payment-screens-mvp/service-payment-summary-mvp" role="button" class="govuk-button govuk-button--start">
+              Start journey
+              </a>
+
+              <details class="govuk-details">
+                  <summary class="govuk-details__summary">
+                    <span class="govuk-details__summary-text">
+                      MVP - All pages
+                    </span>
+                  </summary>
+
+                  <div class="govuk-details__text">
+                    <li><a href="/payment-screens-mvp/service-payment-summary-mvp">
+                      Payment summary
+                    </a></li>
+
+                    <li><a href="/payment-screens-mvp/service-payment-screen-mvp">
+                      Make payment
+                    </a></li>
+
+                    <br>
+                    <h4 class="govuk-heading-s">Error messaging examples</h3>
+
+                    <li><a href="/payment-screens-mvp/service-payment-screen-error-mvp">
+                      Make payment - error messaging
+                    </a></li>
+                  </div>
+
+              </details>
+
+
+
+            <h2 class="govuk-heading-m">In service future payment screens</h2>
+
+            <a href="/payment-screens/service-payment-summary" role="button" class="govuk-button govuk-button--start">
+              Start journey
+              </a>
+
+
+            <details class="govuk-details">
+                <summary class="govuk-details__summary">
+                  <span class="govuk-details__summary-text">
+                    All pages
+                  </span>
+                </summary>
+
+                <div class="govuk-details__text">
+                  <li><a href="/payment-screens/service-payment-summary">
+                    Payment summary
+                  </a></li>
+
+                  <li><a href="/payment-screens/service-payment-screen">
+                    Make payment
+                  </a></li>
+
+                  <br>
+                  <h4 class="govuk-heading-s">Error messaging examples</h3>
+
+                  <li><a href="payment-screens/service-payment-screen-error">
+                    Make payment - error messaging
+                  </a></li>
+                </div>
+
+            </details>
+
+               <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+
+
+
+          </div>
+          <div class="govuk-grid-column-one-third">
+
+              <aside class="app-related-items" role="complementary">
+                <h2 class="govuk-heading-m" id="subsection-title">
+                  Controls
+                </h2>
+                <nav role="navigation" aria-labelledby="subsection-title">
+                  <ul class="govuk-list govuk-body-s">
+                    <li>
+                      <a class="govuk-body govuk-!-f-19" href="/prototype-admin/clear-data">
+                        Clear session
+                      </a>
+                    </li>
+                    <!-- <li>
+                      <a href="#">
+                        Related link
+                      </a>
+                    </li> -->
+                    <!-- <li>
+                      <a href="#" class="govuk-!-w-bold">
+                        More <span class="visuallyhidden">in Subsection</span>
+                      </a>
+                    </li> -->
+                    <li>
+                      <details class="govuk-details">
+                      <summary class="govuk-details__summary">
+                        <span class="govuk-details__summary-text">
+                          Set parameters
+                        </span>
+                      </summary>
+                      <div class="govuk-details__text">
+
+
+                          <p> No parameters to set </p>
+
+                      </div>
+                  </details>
+                    </li>
+
+                  </ul>
+                </nav>
+              </aside>
+
+              <br>
+              <aside class="app-related-items" role="complementary">
+                <h2 class="govuk-heading-m" id="subsection-title">
+                  Fees and payments prototypes
+                </h2>
+                <nav role="navigation" aria-labelledby="subsection-title">
+                  <ul class="govuk-list govuk-body-s">
+                    <li>
+                      <a class="govuk-body govuk-!-f-19" href="https://manage-payments-prototype.herokuapp.com/">
+                        Manage payments to HMCTS
+                      </a>
+                    </li>
+                    <li>
+                      <a class="govuk-body govuk-!-f-19" href="https://fee-register-prototype.herokuapp.com/">
+                        Fee register
+                      </a>
+                    </li>
+                    <li>
+                      <a class="govuk-body govuk-!-f-19" href="https://payment-by-account-prototype.herokuapp.com/">
+                        Payment by account
+                      </a>
+                    </li>
+                    <li>
+                      <a class="govuk-body govuk-!-f-19" href="https://payments-ui-prototype.herokuapp.com/">
+                        Payments UI
+                      </a>
+                    </li>
+                    <li>
+                      <a class="govuk-body govuk-!-f-19" href="https://caseworker-prototype.herokuapp.com/">
+                        Caseworker
+                      </a>
+                    </li>
+                    <li>
+                      <a class="govuk-body govuk-!-f-19" href="https://service-pay-screens-prototype.herokuapp.com/">
+                        In service payment screens
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+              </aside>
+
+
+          </div>
+
+
+        </div>
+    </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{% endblock %}
