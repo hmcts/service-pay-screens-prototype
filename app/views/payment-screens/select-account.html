@@ -1,0 +1,124 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Make payment
+{% endblock %}
+
+{% block main %}
+
+<div class="govuk-width-container">
+  <main role="main" class="govuk-main-wrapper">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-one-half">
+
+        <a href="/payment-screens/service-payment-screen" class="govuk-back-link">Back</a>
+        <br>
+        <br>
+
+          <h1 class="govuk-heading-xl">
+            Make payment
+            <span class="govuk-caption-xl"></span>
+          </h1>{{releaseVersion | log }}
+          <!-- <p>
+            Amount to pay: £550
+          </p> -->
+
+              <div class="govuk-inset-text">
+                Amount to pay:<p class="govuk-body govuk-!-font-weight-bold">£216.50</p>
+              </div>
+
+
+            </div>
+            </div>
+
+
+            <div class="govuk-grid-row">
+            <div class="govuk-grid-column-two-thirds">
+
+              <div class="govuk-radios" data-module="radios">
+                <h3 class="govuk-heading-s">
+                  Select account
+                  <span class="govuk-caption-xl"></span>
+                </h3>
+
+
+                          <div class="govuk-radios__item">
+                            <input class="govuk-radios__input" id="PBA-account-conditional-1" name="PBA-account" type="radio"  value="email" data-aria-controls="conditional-PBA-account-conditional-1">
+                            <label class="govuk-label govuk-radios__label" for="PBA-account-conditional-1">
+                            PBA1246287
+                          </label>
+                          </div>
+                          <div class="govuk-radios__conditional" id="conditional-PBA-account-conditional-1">
+                            <div class="govuk-form-group">
+                              <label class="govuk-label" for="contact-by-email" value"550.00">
+                                Add a reference
+                            </label>
+
+                            <span id="nationality-hint" class="govuk-hint">This will appear on your statement to help <br>you identify this payment and the related case</span>
+                              <input class="govuk-input govuk-!-width-two-thirds" id="contact-by-email" name="Add-reference" type="text">
+                            </div>
+
+                          </div>
+                          <div class="govuk-radios__item">
+                            <input class="govuk-radios__input" id="PBA-account-conditional-2" name="PBA-account" type="radio" value="phone" data-aria-controls="conditional-PBA-account-conditional-2">
+                            <label class="govuk-label govuk-radios__label" for="PBA-account-conditional-2">
+                            PBA0896366
+                          </label>
+                          </div>
+                          <div class="govuk-radios__conditional" id="conditional-PBA-account-conditional-2">
+                            <div class="govuk-form-group">
+                              <label class="govuk-label" for="contact-by-email">
+                                Add a reference
+                            </label>
+
+                              <span id="nationality-hint" class="govuk-hint">This will appear on your statement to help <br>you identify this payment and the related case</span>
+                              <input class="govuk-input govuk-input govuk-!-width-two-thirds" id="contact-by-phone" name="Add-reference" type="text">
+                            </div>
+
+                </div>
+        </div>
+
+              
+
+
+
+
+
+
+
+      </div>
+    </div>
+
+
+
+
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+
+        <!-- <details class="govuk-details">
+            <summary class="govuk-details__summary">
+              <span class="govuk-details__summary-text">
+                Not got an account?
+              </span>
+            </summary>
+            <div class="govuk-details__text">
+              You need an account to make online payments to us.
+              <a href="">
+                Create an account
+              </a>
+            </div>
+        </details> -->
+
+
+        <a href="/payment-screens/complete" class="govuk-button">
+          Save and continue
+        </a>
+
+
+      </div>
+    </div>
+
+  </main>
+</div>
+
+{% endblock %}
