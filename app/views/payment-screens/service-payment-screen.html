@@ -8,6 +8,7 @@ payment-type{% extends "layout.html" %}
 
 <div class="govuk-width-container">
   <main role="main" class="govuk-main-wrapper">
+    <form method="POST" action>
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-one-half">
 
@@ -34,7 +35,6 @@ payment-type{% extends "layout.html" %}
 
             <div class="govuk-grid-row">
             <div class="govuk-grid-column-two-thirds">
-
               <div class="govuk-form-group">
               <fieldset class="govuk-fieldset">
                 <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
@@ -160,14 +160,15 @@ payment-type{% extends "layout.html" %}
         </details> -->
 
 
-        <a href="" class="govuk-button">
+        <button href="" class="govuk-button" type="submit">
           Save and continue
-        </a>
+        </button>
 
 
       </div>
     </div>
 
+    </form>
   </main>
 </div>
 
